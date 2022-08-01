@@ -3,56 +3,15 @@
 <html lang="pt-BR">
   {% include 'login/partials/head.html' %}
   <body>
-    <div class="limiter">
-      <div class="container-login100 container-login100-bg">
-        <div class="wrap-login100">
-          <form class="login100-form validate-form">
-            <span class="login100-form-title p-b-26"> Bem vindo! </span>
-            <span class="login100-form-title p-b-48 ">
-              <div class="avatar">
-                <img
-                  src="{% static 'global/img/recargapay.png' %}"
-                  alt="avatar"
-                />
-              </div>
-            </span>
-
-            <div
-              class="wrap-input100 validate-input"
-              data-validate="Valid email is: a@b.c"
-            >
-              <input class="input100" name="email" type="text" />
-              <span class="focus-input100" data-placeholder="Email"></span>
-            </div>
-
-            <div
-              class="wrap-input100 validate-input"
-              data-validate="Digite sua senha"
-            >
-              <span class="btn-show-pass">
-                <i class="zmdi zmdi-eye"></i>
-              </span>
-              <input class="input100" name="pass" type="password" />
-              <span class="focus-input100" data-placeholder="Senha"></span>
-            </div>
-
-            <div class="container-login100-form-btn p-t-30">
-              <div class="wrap-login100-form-btn">
-                <div class="login100-form-bgbtn"></div>
-                <button class="login100-form-btn">Login</button>
-              </div>
-            </div>
-
-            <div class="text-center p-t-40">
-              <span class="txt1"> Esqueceu a senha? </span>
-              <a class="txt2" href="#"> Recuperar </a>
-            </div>
-          </form>
+    <div class="main-top"></div>
+      <div class="main-container">
+        <div class="container">
+          <div class="form-wrap">
+            {% include 'login/partials/login.html' %}
+          </div>
         </div>
       </div>
-    </div>
-    {% include 'login/partials/footer.html' %}
-    {% include 'login/partials/scripts.html' %}
-    <div id="dropDownSelect1"></div>
+      {% include 'login/partials/footer.html' %}
+      {% include 'login/partials/scripts.html' %}
   </body>
 </html>
