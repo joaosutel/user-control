@@ -1,0 +1,249 @@
+:root {
+  --spacing-gutter-small: 0.6rem;
+  --spacing-gutter-medium: 3rem;
+  --spacing-gutter-large: 4rem;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-background: #f2f2f2;
+  --color-primary-blue: #002244;
+  --color-secondary-blue: #0f4d88;
+  --color-primary-green: #499030;
+  --color-secondary-green: #69be28;
+
+  --color-gray-0: #f9f9f9;
+  --color-gray-1: #e0e0e0;
+  --color-gray-2: #c7c7c7;
+  --color-gray-3: #aeaeae;
+  --color-gray-4: #959595;
+  --color-gray-5: #7d7d7d;
+  --color-gray-6: #646464;
+  --color-gray-7: #4b4b4b;
+  --color-gray-8: #323232;
+  --color-gray-9: #191919;
+
+  --color-dark-text: #444;
+  --color-info-dark: #0c4581;
+  --color-debug-dark: #0c4581;
+  --color-success-dark: #09a72e;
+  --color-alert-dark: #d69710;
+  --color-warning-dark: #fc6d35;
+  --color-error-dark: #c80000;
+
+  --font-primary: sans-serif;
+  --font-headings: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: var(--font-headings);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  font-family: var(--font-headings);
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: var(--color-gray-4);
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+  color: var(--color-secondary-green);
+}
+
+a:hover {
+  color: var(--color-secondary-green);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  font-family: var(--font-headings);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-dark-text);
+  margin: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--color-gray-3);
+}
+input:-moz-placeholder {
+  color: var(--color-gray-3);
+}
+input::-moz-placeholder {
+  color: var(--color-gray-3);
+}
+input:-ms-input-placeholder {
+  color: var(--color-gray-3);
+}
+
+textarea::-webkit-input-placeholder {
+  color: var(--color-gray-3);
+}
+textarea:-moz-placeholder {
+  color: var(--color-gray-3);
+}
+textarea::-moz-placeholder {
+  color: var(--color-gray-3);
+}
+textarea:-ms-input-placeholder {
+  color: var(--color-gray-3);
+}
+
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+.general-text {
+  font-family: var(--font-headings);
+  font-size: 13px;
+  color: var(--color-dark-text);
+  line-height: 1.5;
+}
+
+.main-top {
+  background: var(--color-primary-blue);
+  background: -moz-linear-gradient(
+    90deg,
+    var(--color-secondary-blue) 0%,
+    var(--color-secondary-green) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--color-secondary-blue) 0%,
+    var(--color-secondary-green) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    var(--color-secondary-blue) 0%,
+    var(--color-secondary-green) 100%
+  );
+  padding: var(--spacing-gutter-small);
+  border: 0;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  background: var(--color-background);
+}
+
+.container {
+  width: 100%;
+  min-height: 95vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background: var(--color-primary-blue);
+  padding: var(--spacing-gutter-small);
+}
+
+.main-footer a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+}
+
+.main-footer a:hover {
+  color: var(--color-secondary-green);
+  font-weight: 700;
+}
