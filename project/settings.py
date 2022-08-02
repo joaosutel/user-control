@@ -17,6 +17,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "login",
+    "change_password",
+    "recover_password",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

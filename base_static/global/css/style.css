@@ -23,7 +23,7 @@
   --color-gray-9: #191919;
 
   --color-dark-text: #444;
-  --color-info-dark: #0c4581;
+  --color-info-dark: #4784c5;
   --color-debug-dark: #0c4581;
   --color-success-dark: #09a72e;
   --color-alert-dark: #d69710;
@@ -181,6 +181,13 @@ iframe {
   font-family: var(--font-headings);
   font-size: 13px;
   color: var(--color-dark-text);
+  line-height: 1.5;
+}
+
+.info-text {
+  font-family: var(--font-headings);
+  font-size: 12px;
+  color: var(--color-info-dark);
   line-height: 1.5;
 }
 
