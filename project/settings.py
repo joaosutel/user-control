@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     "login",
     "change_password",
     "recover_password",
+    "create_user",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

@@ -6,4 +6,5 @@ urlpatterns = [
     path("", include("login.urls")),
     path("change-password/", include("change_password.urls")),
     path("recover-password/", include("recover_password.urls")),
+    path("create-user/", include("create_user.urls")),
 ]

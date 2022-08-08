@@ -6,10 +6,10 @@
   --color-white: #fff;
   --color-black: #000;
   --color-background: #f2f2f2;
-  --color-primary-blue: #002244;
-  --color-secondary-blue: #0f4d88;
-  --color-primary-green: #499030;
-  --color-secondary-green: #69be28;
+  --color-primary: #2a0564;
+  --color-secondary: #52047c;
+  --color-tertiary: #971cd9;
+  --color-quaternary: #ff55bb;
 
   --color-gray-0: #f9f9f9;
   --color-gray-1: #e0e0e0;
@@ -64,11 +64,11 @@ a {
 
 a:focus {
   outline: none !important;
-  color: var(--color-secondary-green);
+  color: var(--color-quaternary);
 }
 
 a:hover {
-  color: var(--color-secondary-green);
+  color: var(--color-quaternary);
   text-decoration: none;
   font-weight: 700;
 }
@@ -192,21 +192,21 @@ iframe {
 }
 
 .main-top {
-  background: var(--color-primary-blue);
+  background: var(--color-primary);
   background: -moz-linear-gradient(
     90deg,
-    var(--color-secondary-blue) 0%,
-    var(--color-secondary-green) 100%
+    var(--color-secondary) 0%,
+    var(--color-quaternary) 100%
   );
   background: -webkit-linear-gradient(
     90deg,
-    var(--color-secondary-blue) 0%,
-    var(--color-secondary-green) 100%
+    var(--color-secondary) 0%,
+    var(--color-quaternary) 100%
   );
   background: linear-gradient(
     90deg,
-    var(--color-secondary-blue) 0%,
-    var(--color-secondary-green) 100%
+    var(--color-secondary) 0%,
+    var(--color-quaternary) 100%
   );
   padding: var(--spacing-gutter-small);
   border: 0;
@@ -240,7 +240,11 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: right;
-  background: var(--color-primary-blue);
+  background: linear-gradient(
+    298.71deg,
+    var(--color-primary) 5.63%,
+    var(--color-secondary) 91.54%
+  );
   padding: var(--spacing-gutter-small);
 }
 
@@ -251,6 +255,6 @@ iframe {
 }
 
 .main-footer a:hover {
-  color: var(--color-secondary-green);
+  color: var(--color-quaternary);
   font-weight: 700;
 }
